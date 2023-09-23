@@ -10,4 +10,5 @@ Saves the provided movie to the database and then publishes an event about its r
 > Responsible for displaying 10 recently released movies
 
 Listens to the events in order to update the view of movies.
+
 The board service is idempotent, enabling us to achieve exactly-once processing.
