@@ -4,7 +4,7 @@ Demonstrates event-driven architecture using the transactional outbox pattern to
 ### release module
 > Responsible for publishing movies  
 
-Saves the provided movieView to the database and then publishes an event about its release.
+Saves the provided movie to the database and then publishes an event about its release.
 
 ### board module
 > Responsible for displaying 10 recently released movies
