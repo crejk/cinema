@@ -9,6 +9,5 @@ Saves the provided movie to the database and then publishes an event about its r
 ### board module
 > Responsible for displaying 10 recently released movies
 
-Listens to the events in order to update the view of movies.
-
+Listens to the events in order to update the view of movies.<br>
 The board service is idempotent, enabling us to achieve exactly-once processing.
