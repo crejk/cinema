@@ -14,6 +14,6 @@ class JustForwardDomainEventPublisher implements DomainEventPublisher {
 
     @Override
     public void publish(DomainEvent event) {
-        streamBridge.send("events", event);
+        streamBridge.send(event.getType(), event);
     }
 }

@@ -52,7 +52,7 @@ class ReleaseTest {
     }
 
     private MovieReleased receiveEvent() {
-        Message<byte[]> eventMessage = output.receive(TimeUnit.SECONDS.toMillis(5), "events");
+        Message<byte[]> eventMessage = output.receive(TimeUnit.SECONDS.toMillis(5), "movie-released");
         try {
             return objectMapper.readValue(eventMessage.getPayload(), MovieReleased.class);
         } catch (IOException e) {
